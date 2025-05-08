@@ -1,0 +1,47 @@
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\ ╔═╗┌─┐┌┬┐┌┬┐┬  ┌─┐┬─┐┌─┐       ╦ ╦┌─┐╦╔═ \\
+\\ ╚═╗├┤  │  │ │  ├┤ ├┬┘└─┐  ───  ╠═╣│ │╠╩╗ \\
+\\ ╚═╝└─┘ ┴  ┴ ┴─┘└─┘┴└─└─┘       ╩ ╩└─┘╩ ╩ \\
+\\ ╦═╗┌─┐┌┬┐┌─┐┌─┐┌┬┐┌─┐┬─┐┌─┐┌┬┐           \\
+\\ ╠╦╝├┤ │││├─┤└─┐ │ ├┤ ├┬┘├┤  ││           \\
+\\ ╩╚═└─┘┴ ┴┴ ┴└─┘ ┴ └─┘┴└─└─┘─┴┘           \\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+ This Is A Combination of The base and Extra1 Games in a Simpler/Compact way (hopefully with Extra2 In the Future)
+ without the need of patches for a Quality Of Life improvement for modding/experience.
+
+ This project will require compatibility with MPUpdater, or Updates cant be recieved When MPUpdater updates are released 💔
+
+FIXES:
+ -- fix map size text
+ -- fix archer and range troop defend range exploit
+ -- fix AO troop gui's (maybe heros too, i havent checked.)
+ -- fix extra1 entities not having localized names but their model names
+ -- fix MultiplayerTools error in "MultiplayerTools.CreatePatrolingTroop(5, Entities.CU_Evil_LeaderBearman1, 16, "Nephilim" .. i, "NephilimPatrolPosition" .. i)" line 91: (4)HauntedRuins\Mapscript.lua
+ -- (not necesscary but double click selection bugs still havent been fixed. so this is something that could be a quality of life improvement.)
+ -- fix credits map
+ -- most general ingame script stuff isnt working..
+ -- some errors with AO technologies? attempt to call global `ForbidTechnology' (a nil value) ForbidTechnology(Technologies.GT_Binocular);
+ -- more errors, [string "Data\Script\Interface\InitInterface.lua"]:492: table index is nil HintTable[UpgradeCategories.SoldierRifle] 		= "UNIT_Rifleman"
+	HintTable[UpgradeCategories.Scout] 				= "UNIT_Scout"
+	HintTable[UpgradeCategories.Thief] 				= "UNIT_Thief"
+ -- [string "Data\Script\MapTools\Main.lua"]:50: attempt to call global `Mission_InitDiplomacy' (a nil value)
+ -- camera errors [string "Data\Script\Local\LocalCamera.lua"]:10: attempt to index global `gvCamera' (a nil value) & [string "Data\Script\Interfact\selection.lua"]:564: attempt to index global `gvCamera' (a nil value)
+ -- fix top left white square not being transparent in other screens??
+ -- fix Zindex/Zpriority Of CC Button
+ -- fix LAN Multiplayer Menu And functionality of server hosting/list
+ -- Game Broke, im not sure why its happening, but it doesnt work for MP or Csingleplayer
+ -- fix maps not being shown from the shr directory
+
+ADDITIONS / REMOVALS:
+ -- add script to edit settlers Save Directory (default %systemdrive%\%username%\Documents\THE SETTLERS - Herritage Of Kings)
+ -- add script to change player color (player settings)
+ -- add new bik for the background (this will need to be decided on)
+ -- add the mod loader and a new mod selection screen into the bba, also the "mods" folder into shr\mods (FOR MULTIPLAYER).
+ -- add a mousewheel scroll function for the map selection and save
+ -- add map packs (will be formatted as a folder with s5x files inside. NOT folder Maps.)
+ -- add multi campaign selection (Only for Base, Extra1, Extra2 Campaigns.)
+ -- move music from shr into game files
+
+ -- remove all demo stuff (i think its done?)
+ -- remove all unused guis
